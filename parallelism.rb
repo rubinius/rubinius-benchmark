@@ -5,7 +5,7 @@ class ParallelismCalculator
     @jit_warned = false
   end
 
-  # It's critical this method take take the same ammount of time
+  # It's critical this method take the same ammount of time
   # relative to +lc+ no matter when it's called. Because of this
   # reason, this script must be run with any form of JIT off, since
   # it will change run's work and throw off the rest of the
