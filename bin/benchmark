@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
-
+root_path = File.expand_path("../..", __FILE__)
 lib_path = File.expand_path("../../lib", __FILE__)
 
+$:.unshift root_path
 $:.unshift lib_path
 
 require 'optparse'
