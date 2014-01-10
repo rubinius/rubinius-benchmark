@@ -92,7 +92,7 @@ results = targets.map do |t|
   tf.close
   STDOUT.puts "=== #{t} ===" unless at_end
 
-  args = extra + ["-I#{lib_path}", "benchmark/lib/benchmark/suite-run.rb"]
+  args = extra + ["-I#{lib_path}", "lib/benchmark/suite-run.rb"]
 
   args += opts
   args << tf.path
