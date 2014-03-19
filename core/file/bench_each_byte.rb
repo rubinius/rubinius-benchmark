@@ -12,17 +12,17 @@ medium_handle = File.open(medium_file, 'r')
 large_handle  = File.open(large_file, 'r')
 
 Benchmark.ips do |x|
-  x.report "File.each_byte with a small file" do
+  x.report "File#each_byte with a small file" do
     small_handle.each_byte {}
     small_handle.rewind
   end
 
-  x.report "File.each_byte with a medium file" do
+  x.report "File#each_byte with a medium file" do
     medium_handle.each_byte {}
     medium_handle.rewind
   end
 
-  x.report "File.each_byte with a large file" do
+  x.report "File#each_byte with a large file" do
     large_handle.each_byte {}
     large_handle.rewind
   end
