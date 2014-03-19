@@ -73,7 +73,7 @@ end
 opt.parse!
 
 if targets.empty?
-  targets << "bin/rbx"
+  targets << "rbx"
 end
 
 if save and targets.size > 1
